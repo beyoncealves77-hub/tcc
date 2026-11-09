@@ -1,0 +1,362 @@
+/* PÁGINA TODA */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #272323;
+    color: white;
+}
+
+
+/* FAIXA SUPERIOR */
+
+.barra-topo {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+/* CABEÇALHO */
+
+header {
+    background-color: #000000;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #333;
+}
+
+
+header img {
+    width: 150px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+
+header img:hover {
+    transform: scale(1.05);
+}
+
+
+/* MENU */
+
+.menu {
+    background-color: #0d0d0d;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 18px;
+    border-bottom: 1px solid #222;
+}
+
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+
+.menu a:hover {
+    color: #bfbfbf;
+}
+
+
+/* ÁREA PRINCIPAL */
+
+.pagina-compra {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 30px;
+
+    display: flex;
+    gap: 60px;
+}
+
+
+/* ========================= */
+/* LADO ESQUERDO - FOTOS */
+/* ========================= */
+
+.galeria {
+    width: 58%;
+    display: flex;
+    gap: 20px;
+}
+
+
+/* MINIATURAS */
+
+.miniaturas {
+    width: 90px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+.miniaturas img {
+    width: 80px;
+    height: 80px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    border: 2px solid #444;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.miniaturas img:hover {
+    border-color: white;
+    transform: scale(1.05);
+}
+
+.miniaturas img.selecionada {
+    border-color: white;
+}
+
+
+/* FOTO GRANDE */
+
+.foto-principal {
+    flex: 1;
+
+    background-color: #1a1a1a;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+}
+
+
+.foto-principal img {
+    width: 100%;
+    height: 550px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* ========================= */
+/* LADO DIREITO */
+/* ========================= */
+
+.informacoes {
+    width: 42%;
+}
+
+
+/* CATEGORIA */
+
+.categoria {
+    color: #999;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+
+/* NOME DO PRODUTO */
+
+.informacoes h1 {
+    font-size: 32px;
+
+    margin-top: 0;
+
+    margin-bottom: 15px;
+}
+
+
+/* PREÇO */
+
+.informacoes h2 {
+    font-size: 27px;
+
+    margin-top: 0;
+
+    margin-bottom: 25px;
+}
+
+
+/* DESCRIÇÃO */
+
+.descricao {
+    color: #c7c7c7;
+
+    font-size: 15px;
+
+    line-height: 24px;
+
+    margin-bottom: 25px;
+}
+
+
+/* LINHA */
+
+hr {
+    border: none;
+
+    border-top: 1px solid #444;
+
+    margin: 30px 0;
+}
+
+
+/* MODELO SELECIONADO */
+
+.modelo {
+    margin-bottom: 30px;
+}
+
+
+.modelo > p:first-child {
+    color: #999;
+
+    font-size: 13px;
+
+    margin-bottom: 8px;
+}
+
+
+.modelo h3 {
+    font-size: 19px;
+
+    margin-top: 0;
+
+    margin-bottom: 10px;
+}
+
+
+.modelo > p:last-child {
+    color: #c7c7c7;
+
+    font-size: 14px;
+
+    line-height: 22px;
+}
+
+/* TAMANHOS */
+
+.area-tamanhos {
+    display: none;
+    margin-bottom: 30px;
+}
+
+
+.area-tamanhos > p {
+    color: #999;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+
+.tamanhos {
+    display: flex;
+    gap: 10px;
+}
+
+
+.tamanhos button {
+    width: 48px;
+    height: 45px;
+
+    background-color: #1a1a1a;
+    color: white;
+
+    border: 1px solid #555;
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.tamanhos button:hover {
+    background-color: #333;
+}
+
+
+.tamanhos button.selecionado {
+    background-color: white;
+    color: black;
+    border-color: white;
+}
+
+
+/* BOTÃO */
+
+.botao-carrinho {
+    width: 100%;
+
+    padding: 17px;
+
+    background-color: white;
+
+    color: black;
+
+    border: none;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.botao-carrinho:hover {
+    background-color: #d9d9d9;
+}
+
+
+/* ========================= */
+/* CELULAR */
+/* ========================= */
+
+@media (max-width: 850px) {
+
+    .pagina-compra {
+        flex-direction: column;
+    }
+
+
+    .galeria {
+        width: 100%;
+    }
+
+
+    .informacoes {
+        width: 100%;
+    }
+
+
+    .foto-principal img {
+        height: 450px;
+    }
+
+}

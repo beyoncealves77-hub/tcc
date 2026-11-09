@@ -1,0 +1,654 @@
+const produtos = {
+    
+    
+    1: {
+
+        categoria: "OUTROS",
+
+        nome: "Fone De Ouvido Bluetooth",
+
+        preco: "R$ 100,00",
+
+        descricao:
+            " Fone LED Bluetooth",
+
+        temTamanho: false,
+
+        variacoes: [
+
+            {
+                nome: "Fone LED Bluetooth",
+
+                especificacao:
+                    "Fone LED Bluetooth Branco",
+
+                imagem:
+                    "../Imagens/fone led branco.jpg"
+            },
+
+            {
+                nome: "Fone LED Bluetooth",
+
+                especificacao:
+                    "Fone LED Bluetooth Lilás",
+
+                imagem:
+                    "../Imagens/fone led lilás.jpg"
+            },
+
+            {
+                nome: "Fone LED Bluetooth",
+
+                especificacao:
+                    "Fone LED Bluetooth Laranja",
+
+                imagem:
+                    "../Imagens/fone led laranja.jpg"
+            }
+
+        ]
+
+    },
+
+
+
+    3: {
+
+        categoria: "ACESSÓRIOS",
+
+        nome: "Mochila",
+
+        preco: "R$ 200,00",
+
+        descricao:
+            "Mochila para escola, trabalho ou viagens.",
+
+        temTamanho: false,
+
+        variacoes: [
+
+            {
+                nome: "Modelo Compacto",
+
+                especificacao:
+                    "20 litros • 2 compartimentos",
+
+                imagem:
+                    "../Imagens/Produto teste.webp"
+            },
+
+            {
+                nome: "Modelo Grande",
+
+                especificacao:
+                    "35 litros • 4 compartimentos",
+
+                imagem:
+                    "../Imagens/Produto teste.webp"
+            }
+
+        ]
+
+    },
+
+
+
+    4: {
+
+        categoria: "OUTROS",
+
+        nome: "Perfume",
+
+        preco: "R$ 250,00",
+
+        descricao:
+            "Fragrância marcante para diferentes ocasiões.",
+
+        temTamanho: false,
+
+        variacoes: [
+
+            {
+                nome: "Frasco 50 ml",
+
+                especificacao:
+                    "Conteúdo de 50 ml",
+
+                imagem:
+                    "../Imagens/Produto teste.webp"
+            },
+
+            {
+                nome: "Frasco 100 ml",
+
+                especificacao:
+                    "Conteúdo de 100 ml",
+
+                imagem:
+                    "../Imagens/Produto teste.webp"
+            }
+
+        ]
+
+    },
+
+
+
+    5: {
+
+        categoria: "ROUPAS",
+
+        nome: "Moletom Street",
+
+        preco: "R$ 250,00",
+
+        descricao:
+            "Moletom confortável com estilo urbano.",
+
+        temTamanho: true,
+
+        tamanhos: ["P", "M", "G", "GG"],
+
+        variacoes: [
+
+            {
+                nome: "Modelo Preto",
+
+                especificacao:
+                    "Moletom preto",
+
+                imagem:
+                    "../Imagens/Produto teste.webp"
+            },
+
+            {
+                nome: "Modelo Cinza",
+
+                especificacao:
+                    "Moletom cinza",
+
+                imagem:
+                    "../Imagens/Produto teste.webp"
+            }
+
+        ]
+
+    },
+
+
+
+    6: {
+
+        categoria: "INFORMÁTICA",
+
+        nome: "Teclado Mecânico",
+
+        preco: "R$ 250,00",
+
+        descricao:
+            "Teclado mecânico para jogos e produtividade.",
+
+        temTamanho: false,
+
+        variacoes: [
+
+            {
+                nome: "Switch Azul",
+
+                especificacao:
+                    "Switch Blue • RGB",
+
+                imagem:
+                    "../Imagens/Produto teste.webp"
+            },
+
+            {
+                nome: "Switch Vermelho",
+
+                especificacao:
+                    "Switch Red • RGB",
+
+                imagem:
+                    "../Imagens/Produto teste.webp"
+            }
+
+        ]
+
+    },
+
+
+
+    7: {
+
+        categoria: "ACESSÓRIOS",
+
+        nome: "Boné",
+
+        preco: "R$ 250,00",
+
+        descricao:
+            "Boné ajustável disponível em diferentes modelos.",
+
+        temTamanho: false,
+
+        variacoes: [
+
+            {
+                nome: "Modelo Preto",
+
+                especificacao:
+                    "Cor preta • Ajustável",
+
+                imagem:
+                    "../Imagens/Produto teste.webp"
+            },
+
+            {
+                nome: "Modelo Branco",
+
+                especificacao:
+                    "Cor branca • Ajustável",
+
+                imagem:
+                    "../Imagens/Produto teste.webp"
+            }
+
+        ]
+
+    },
+
+
+
+    8: {
+
+        categoria: "OUTROS",
+
+        nome: "Caneca Personalizada",
+
+        preco: "R$ 250,00",
+
+        descricao:
+            "Caneca disponível em diferentes modelos.",
+
+        temTamanho: false,
+
+        variacoes: [
+
+            {
+                nome: "Modelo Preto",
+
+                especificacao:
+                    "350 ml • Cerâmica",
+
+                imagem:
+                    "../Imagens/Produto teste.webp"
+            },
+
+            {
+                nome: "Modelo Branco",
+
+                especificacao:
+                    "350 ml • Cerâmica",
+
+                imagem:
+                    "../Imagens/Produto teste.webp"
+            }
+
+        ]
+
+    },
+
+
+
+    9: {
+
+        categoria: "ROUPAS",
+
+        nome: "Calça Cargo",
+
+        preco: "R$ 250,00",
+
+        descricao:
+            "Calça cargo com bolsos laterais.",
+
+        temTamanho: true,
+
+        tamanhos: ["P", "M", "G", "GG"],
+
+        variacoes: [
+
+            {
+                nome: "Modelo Preto",
+
+                especificacao:
+                    "Cor preta",
+
+                imagem:
+                    "../Imagens/Produto teste.webp"
+            },
+
+            {
+                nome: "Modelo Bege",
+
+                especificacao:
+                    "Cor bege",
+
+                imagem:
+                    "../Imagens/Produto teste.webp"
+            }
+
+        ]
+
+    },
+
+
+
+    10: {
+
+        categoria: "INFORMÁTICA",
+
+        nome: "Headset Gamer",
+
+        preco: "R$ 250,00",
+
+        descricao:
+            "Headset gamer com microfone integrado.",
+
+        temTamanho: false,
+
+        variacoes: [
+
+            {
+                nome: "Modelo USB",
+
+                especificacao:
+                    "USB • Microfone integrado",
+
+                imagem:
+                    "../Imagens/Produto teste.webp"
+            },
+
+            {
+                nome: "Modelo Wireless",
+
+                especificacao:
+                    "Sem fio • Microfone integrado",
+
+                imagem:
+                    "../Imagens/Produto teste.webp"
+            }
+
+        ]
+
+    }
+
+
+};
+
+
+
+// PEGA O ID DA URL
+
+const parametros =
+    new URLSearchParams(window.location.search);
+
+
+// SE ABRIR DIRETO SEM ID,
+// CARREGA O PRODUTO 1
+
+const id =
+    parametros.get("id") || "1";
+
+
+const produto =
+    produtos[id] || produtos[1];
+
+
+
+carregarProduto();
+
+
+
+// CARREGA AS INFORMAÇÕES
+
+function carregarProduto() {
+
+
+    document
+        .getElementById("categoriaProduto")
+        .textContent =
+        produto.categoria;
+
+
+    document
+        .getElementById("nomeProduto")
+        .textContent =
+        produto.nome;
+
+
+    document
+        .getElementById("precoProduto")
+        .textContent =
+        produto.preco;
+
+
+    document
+        .getElementById("descricaoProduto")
+        .textContent =
+        produto.descricao;
+
+
+    criarMiniaturas();
+
+    configurarTamanhos();
+
+}
+
+
+
+// CRIA AS MINIATURAS
+
+function criarMiniaturas() {
+
+
+    let area =
+        document.getElementById("miniaturas");
+
+
+    area.innerHTML = "";
+
+
+    produto.variacoes.forEach(
+        function(variacao) {
+
+
+            let imagem =
+                document.createElement("img");
+
+
+            imagem.src =
+                variacao.imagem;
+
+
+            imagem.alt =
+                variacao.nome;
+
+
+            imagem.dataset.nome =
+                variacao.nome;
+
+
+            imagem.dataset.especificacao =
+                variacao.especificacao;
+
+
+            imagem.onclick =
+                function() {
+
+                    trocarModelo(imagem);
+
+                };
+
+
+            area.appendChild(imagem);
+
+        }
+    );
+
+
+    let primeiraImagem =
+        area.querySelector("img");
+
+
+    if (primeiraImagem) {
+
+        trocarModelo(primeiraImagem);
+
+    }
+
+}
+
+
+
+// TROCA O MODELO
+
+function trocarModelo(imagem) {
+
+
+    document
+        .getElementById("imagemPrincipal")
+        .src =
+        imagem.src;
+
+
+    document
+        .getElementById("nomeModelo")
+        .textContent =
+        imagem.dataset.nome;
+
+
+    document
+        .getElementById("especificacaoModelo")
+        .textContent =
+        imagem.dataset.especificacao;
+
+
+    let miniaturas =
+        document.querySelectorAll(
+            ".miniaturas img"
+        );
+
+
+    miniaturas.forEach(function(item) {
+
+        item.classList.remove(
+            "selecionada"
+        );
+
+    });
+
+
+    imagem.classList.add(
+        "selecionada"
+    );
+
+}
+
+
+
+// TAMANHOS
+
+function configurarTamanhos() {
+
+
+    let area =
+        document.getElementById(
+            "areaTamanhos"
+        );
+
+
+    let tamanhos =
+        document.getElementById(
+            "tamanhos"
+        );
+
+
+    tamanhos.innerHTML = "";
+
+
+    if (produto.temTamanho === true) {
+
+
+        area.style.display =
+            "block";
+
+
+        produto.tamanhos.forEach(
+            function(tamanho) {
+
+
+                let botao =
+                    document.createElement(
+                        "button"
+                    );
+
+
+                botao.textContent =
+                    tamanho;
+
+
+                botao.onclick =
+                    function() {
+
+                        selecionarTamanho(
+                            botao
+                        );
+
+                    };
+
+
+                tamanhos.appendChild(
+                    botao
+                );
+
+            }
+        );
+
+
+    } else {
+
+
+        area.style.display =
+            "none";
+
+    }
+
+}
+
+
+
+// SELECIONA TAMANHO
+
+function selecionarTamanho(botao) {
+
+
+    let botoes =
+        document.querySelectorAll(
+            ".tamanhos button"
+        );
+
+
+    botoes.forEach(function(item) {
+
+        item.classList.remove(
+            "selecionado"
+        );
+
+    });
+
+
+    botao.classList.add(
+        "selecionado"
+    );
+
+}
